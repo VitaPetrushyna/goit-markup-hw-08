@@ -1,0 +1,38 @@
+.skills {
+  display: flex;
+}
+.skills__item {
+  width: 270px;
+
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.skills__title {
+  color: var(--title-text-co);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.skills__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.skills__icon-container {
+  width: 270px;
+  height: 120px;
+  background: var(--team-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
