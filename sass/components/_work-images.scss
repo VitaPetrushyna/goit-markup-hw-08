@@ -1,3 +1,9 @@
+.section--no-padding-top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .images {
   display: flex;
   margin-top: 50px;

@@ -1,5 +1,5 @@
 @import "./utils/vars";
-@import "./utils/_base-styles";
+@import "./utils/base-styles";
 @import "./components/section";
 @import "./components/logo";
 @import "./components/header-site-nav";
@@ -14,4 +14,5 @@
 @import "./components/modal-window";
 @import "./components/form-window";
 @import "./portfolio/project-filter";
+@import "./portfolio/projects-gallery";
 @import "./portfolio/projects-gallery";
