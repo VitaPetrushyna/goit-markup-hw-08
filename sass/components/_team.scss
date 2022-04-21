@@ -1,3 +1,129 @@
+.team {
+  margin-top: 30px;
+  padding: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1198px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.team__item {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 622px;
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
+  }
+}
+.team__item:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) and (max-width: 1198px) {
+    margin-bottom: 30px;
+  }
+}
+.team__item:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+.team__image {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 460px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
+}
+.team__title {
+  margin-bottom: 0;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team__text {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team__wrapped {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.social {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+.social__item {
+  width: 44px;
+  height: 44px;
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--primary-bg-color);
+  }
+}
+
 // .team {
 //   display: flex;
 //   margin-top: 50px;
