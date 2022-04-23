@@ -5,6 +5,10 @@
     justify-content: space-between;
     align-items: baseline;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 
 .projects-list__item {
@@ -22,7 +26,8 @@
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    width: 370px;
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
 }
 .projects-list__link {
