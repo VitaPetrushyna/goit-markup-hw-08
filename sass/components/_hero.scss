@@ -4,7 +4,7 @@
   margin-top: 0px;
 
   background-color: var(--title-text-color);
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/img-hero-overlay.jpg);
+    url(../images/Header480-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,7 +37,6 @@
       line-height: 1.36;
     }
   }
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
@@ -46,6 +45,58 @@
     padding-bottom: 200px;
     max-width: 1200px;
     height: 600px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Header480-img2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Header768-img.jpg);
+  }
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Header768-img2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img-hero-overlay.jpg);
+  }
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Header-img2x.jpg);
+    }
   }
 }
 

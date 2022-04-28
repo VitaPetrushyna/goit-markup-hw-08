@@ -23,42 +23,78 @@
       <div class="container header__container">
         <a href="" class="logo">Web<span class="logo__dark">Studio</span></a>
         <!--<Блок навигации-->
-        <nav class="nav">
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+        <button type="button" class="menu-button is-open" data-menu-button>
+          <svg
+            width="24"
+            height="24"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              href="./images/symbol-defs.svg#icon-menu_24px"
+              class="icon-cros"
+            ></use>
+            <use
+              href="./images/symbol-defs.svg#icon-close_24px"
+              class="icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!--Блок контактов-->
+          <ul class="contact-nav">
+            <li class="contact-nav__item">
+              <a href="mailto:info@devstudio.com" class="contact-nav__link"
+                ><svg class="contact-nav__icone envelope">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="site-nav__item">
+            <li class="contact-nav__item">
               <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
+                href="tel:+380961111111"
+                class="contact-nav__link contact-nav__link--tel"
+                ><svg class="contact-nav__icone smartphone">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <!--Блок контактов-->
-        <ul class="contact-nav">
-          <li class="contact-nav__item">
-            <a href="mailto:info@devstudio.com" class="contact-nav__link"
-              ><svg class="contact-nav__icone envelope">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact-nav__item">
-            <a href="tel:+380961111111" class="contact-nav__link"
-              ><svg class="contact-nav__icone smartphone">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link">Instagram</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link">Twitter</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link">Facebook</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -100,6 +136,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-1-2.jpg 1x, ./images/img-1-2-2x.jpg 2x"
                     src="./images/img-1-2.jpg"
                     alt="монитор ноутбука"
                     width="370"
@@ -124,6 +161,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-2-2.jpg 1x, ./images/img-2-2-2x.jpg 2x"
                     src="./images/img-2-2.jpg"
                     alt="баскетболисты"
                     width="370"
@@ -150,6 +188,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-3-2.jpg 1x, ./images/img-3-2-2x.jpg 2x"
                     src="./images/img-3-2.jpg"
                     alt="логотип ресторана"
                     width="370"
@@ -174,6 +213,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-4-2.jpg 1x, ./images/img-4-2-2x.jpg 2x"
                     src="./images/img-4-2.jpg"
                     alt="наушники"
                     width="370"
@@ -198,6 +238,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-5-2.jpg 1x, ./images/img-5-2-2x.jpg 2x"
                     src="./images/img-5-2.jpg"
                     alt="коробки"
                     width="370"
@@ -222,6 +263,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-6-2.jpg 1x, ./images/img-6-2-2x.jpg 2x"
                     src="./images/img-6-2.jpg"
                     alt="монитор"
                     width="370"
@@ -248,6 +290,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-7-2.jpg 1x, ./images/img-7-2-2x.jpg 2x"
                     src="./images/img-7-2.jpg"
                     alt="журнал"
                     width="370"
@@ -272,6 +315,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-8-2.jpg 1x, ./images/img-8-2-2x.jpg 2x"
                     src="./images/img-8-2.jpg"
                     alt="бирка"
                     width="370"
@@ -296,6 +340,7 @@
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
                   <img
+                    srcset="./images/img-9-2.jpg 1x, ./images/img-9-2-2x.jpg 2x"
                     src="./images/img-9-2.jpg"
                     alt="человек печатает"
                     width="370"
@@ -400,5 +445,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
