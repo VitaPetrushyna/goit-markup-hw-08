@@ -28,9 +28,15 @@
     margin-left: 93px;
   }
 }
+
+.footer-adress {
+  margin-top: 20px;
+}
+.contact-footer__item {
+  margin-top: 8px;
+}
 .contact-footer__adress {
   display: inline-block;
-  margin-top: 20px;
   margin-bottom: 0;
   color: var(--primary-bg-color);
 
@@ -63,8 +69,11 @@
   }
 }
 .footer__social {
-  margin-top: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1198px) {
+    margin-top: 60px;
+  }
 }
+
 .footer__title {
   font-weight: 700;
   font-size: 14px;
