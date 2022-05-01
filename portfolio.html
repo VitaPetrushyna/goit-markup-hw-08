@@ -61,7 +61,7 @@
             </ul>
           </nav>
           <!--Блок контактов-->
-          <ul class="contact-nav">
+          <ul class="contact-nav contact-nav--tablet">
             <li class="contact-nav__item">
               <a href="mailto:info@devstudio.com" class="contact-nav__link"
                 ><svg class="contact-nav__icone envelope">
@@ -81,6 +81,27 @@
               </a>
             </li>
           </ul>
+          <ul class="contact-nav contact-nav--mobil">
+            <li class="contact-nav__item">
+              <a
+                href="tel:+380961111111"
+                class="contact-nav__link contact-nav__link--tel"
+                ><svg class="contact-nav__icone smartphone">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contact-nav__item">
+              <a href="mailto:info@devstudio.com" class="contact-nav__link"
+                ><svg class="contact-nav__icone envelope">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
           <ul class="mobile-nav">
             <li class="mobile-nav__item">
               <a href="" class="mobile-nav__link">Instagram</a>
@@ -136,13 +157,34 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-1-2.jpg 1x, ./images/img-1-2-2x.jpg 2x"
-                    src="./images/img-1-2.jpg"
-                    alt="монитор ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-1-mobil.jpg     1x,
+                        ./images/img-1-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-1-tablet.jpg     1x,
+                        ./images/img-1-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-1-desktop.jpg     1x,
+                        ./images/img-1-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-1-mobil.jpg"
+                      alt="монитор ноутбука"
+                    />
+                  </picture>
+
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -161,13 +203,30 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-2-2.jpg 1x, ./images/img-2-2-2x.jpg 2x"
-                    src="./images/img-2-2.jpg"
-                    alt="баскетболисты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-2-mobil.jpg     1x,
+                        ./images/img-2-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-2-tablet.jpg     1x,
+                        ./images/img-2-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-2-desktop.jpg     1x,
+                        ./images/img-2-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/img-1-mobil.jpg" alt="баскетболисты" />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -188,13 +247,33 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-3-2.jpg 1x, ./images/img-3-2-2x.jpg 2x"
-                    src="./images/img-3-2.jpg"
-                    alt="логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-3-mobil.jpg     1x,
+                        ./images/img-3-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-3-tablet.jpg     1x,
+                        ./images/img-3-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-3-desktop.jpg     1x,
+                        ./images/img-3-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-1-mobil.jpg"
+                      alt="логотип ресторана"
+                    />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -213,13 +292,30 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-4-2.jpg 1x, ./images/img-4-2-2x.jpg 2x"
-                    src="./images/img-4-2.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-4-mobil.jpg     1x,
+                        ./images/img-4-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-4-tablet.jpg     1x,
+                        ./images/img-4-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-4-desktop.jpg     1x,
+                        ./images/img-4-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/img-1-mobil.jpg" alt="наушники" />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -238,13 +334,30 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-5-2.jpg 1x, ./images/img-5-2-2x.jpg 2x"
-                    src="./images/img-5-2.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-5-mobil.jpg     1x,
+                        ./images/img-5-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-5-tablet.jpg     1x,
+                        ./images/img-5-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-5-desktop.jpg     1x,
+                        ./images/img-5-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/img-1-mobil.jpg" alt="коробки" />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -263,13 +376,30 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-6-2.jpg 1x, ./images/img-6-2-2x.jpg 2x"
-                    src="./images/img-6-2.jpg"
-                    alt="монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-6-mobil.jpg     1x,
+                        ./images/img-6-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-6-tablet.jpg     1x,
+                        ./images/img-6-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-6-desktop.jpg     1x,
+                        ./images/img-6-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/img-1-mobil.jpg" alt="монитор" />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -290,13 +420,30 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-7-2.jpg 1x, ./images/img-7-2-2x.jpg 2x"
-                    src="./images/img-7-2.jpg"
-                    alt="журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-7-mobil.jpg     1x,
+                        ./images/img-7-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-7-tablet.jpg     1x,
+                        ./images/img-7-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-7-desktop.jpg     1x,
+                        ./images/img-7-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/img-1-mobil.jpg" alt="журнал" />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -315,13 +462,30 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-8-2.jpg 1x, ./images/img-8-2-2x.jpg 2x"
-                    src="./images/img-8-2.jpg"
-                    alt="бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-8-mobil.jpg     1x,
+                        ./images/img-8-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-8-tablet.jpg     1x,
+                        ./images/img-8-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-8-desktop.jpg     1x,
+                        ./images/img-8-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/img-1-mobil.jpg" alt="бирка" />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -340,13 +504,33 @@
             <li class="projects-list__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__image">
-                  <img
-                    srcset="./images/img-9-2.jpg 1x, ./images/img-9-2-2x.jpg 2x"
-                    src="./images/img-9-2.jpg"
-                    alt="человек печатает"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-9-mobil.jpg     1x,
+                        ./images/img-9-mobil-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-9-tablet.jpg     1x,
+                        ./images/img-9-tablet-@2x.jpg 2x
+                      "
+                      media="(max-width: 1198px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-9-desktop.jpg     1x,
+                        ./images/img-9-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/img-1-mobil.jpg"
+                      alt="человек печатает"
+                    />
+                  </picture>
                   <div class="projects-list__description">
                     <p class="projects-list__text">
                       Ресурс предлагает комплексные предложения с разным уровнем

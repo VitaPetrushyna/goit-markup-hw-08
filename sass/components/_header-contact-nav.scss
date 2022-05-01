@@ -4,16 +4,22 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: auto;
+    margin-left: 84px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: space-between;
+    margin-left: 305px;
   }
 }
-.contact-nav__item {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
+
+.contact-nav--tablet {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.contact-nav--mobil {
+  @media screen and (min-width: 767px) {
+    display: none;
   }
 }
 

@@ -1,15 +1,16 @@
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
+  display: flex;
 
   @media screen and (max-width: 767px) {
-    display: flex;
     min-height: 60px;
   }
+}
+.header__container {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
 }
 .menu-container {
@@ -31,12 +32,7 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-left: 88px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
   }
 }
 

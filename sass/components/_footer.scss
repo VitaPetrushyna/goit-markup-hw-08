@@ -20,19 +20,16 @@
 
 .footer__information {
   @media screen and (min-width: 1200px) {
+    margin-right: 70px;
     flex-grow: 1;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-footer {
-    margin-left: 93px;
+    text-align: start;
   }
 }
 
 .footer-adress {
   margin-top: 20px;
 }
-.contact-footer__item {
+.contact-footer__item:not(:first-child) {
   margin-top: 8px;
 }
 .contact-footer__adress {
@@ -69,8 +66,11 @@
   }
 }
 .footer__social {
-  @media screen and (min-width: 768px) and (max-width: 1198px) {
-    margin-top: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
   }
 }
 
@@ -82,6 +82,10 @@
   text-transform: uppercase;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .footer-icons {
@@ -111,13 +115,19 @@
   fill: var(--primary-bg-color);
   margin: 12px;
 }
+
 .form-footer {
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
-}
-.form-footer {
-  margin-top: 60px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 
   &__div {
     @media screen and (min-width: 1200px) {
@@ -129,7 +139,7 @@
 }
 
 .form-footer input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   margin-right: 12px;
   padding: 15px 16px;
@@ -138,6 +148,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footer-bg-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .form-footer__button {
   display: flex;

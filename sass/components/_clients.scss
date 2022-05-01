@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   margin: -15px;
   margin-top: 15px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 35px;
+  }
 }
 
 .clients__item {
