@@ -10,12 +10,21 @@
 .header__container {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
+  }
+}
+
+.container__mobile {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }
+
 .menu-container {
   display: none;
-  z-index: 1;
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -25,6 +34,7 @@
     height: 796px;
     padding: 48px 40px;
     background-color: #ffffff;
+    z-index: 10;
 
     &.is-open {
       display: block;
@@ -33,6 +43,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
   }
 }
 
@@ -41,7 +56,7 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin-left: 275px;
+  // margin-left: auto;
   width: 40px;
   height: 40px;
   border: none;
