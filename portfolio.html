@@ -21,27 +21,30 @@
     <!--Шапка сайта-->
     <header class="header">
       <div class="container header__container">
-        <a href="" class="logo">Web<span class="logo__dark">Studio</span></a>
+        <div class="container__mobile">
+          <a href="" class="logo">Web<span class="logo__dark">Studio</span></a>
+          <button type="button" class="menu-button is-open" data-menu-button>
+            <svg
+              width="24"
+              height="24"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              aria-label="Переключатель мобильного меню"
+              role="banner"
+            >
+              <use
+                href="./images/symbol-defs.svg#icon-menu_24px"
+                class="icon-cros"
+              ></use>
+              <use
+                href="./images/symbol-defs.svg#icon-close_24px"
+                class="icon-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
         <!--<Блок навигации-->
-        <button type="button" class="menu-button is-open" data-menu-button>
-          <svg
-            width="24"
-            height="24"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            aria-label="Переключатель мобильного меню"
-            role="banner"
-          >
-            <use
-              href="./images/symbol-defs.svg#icon-menu_24px"
-              class="icon-cros"
-            ></use>
-            <use
-              href="./images/symbol-defs.svg#icon-close_24px"
-              class="icon-menu"
-            ></use>
-          </svg>
-        </button>
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="nav">
             <ul class="site-nav">
@@ -579,7 +582,7 @@
           </address>
         </div>
         <div class="footer__social">
-          <h2 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <p class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</p>
           <ul class="footer-icons">
             <li class="footer-icons__item">
               <a href="" class="footer-icons__link">
@@ -611,6 +614,7 @@
             </li>
           </ul>
         </div>
+
         <form class="form-footer">
           <p class="footer__title">Подпишитесь на рассылку</p>
           <div class="form-footer__div">
