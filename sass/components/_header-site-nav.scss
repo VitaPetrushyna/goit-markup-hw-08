@@ -8,7 +8,9 @@
   }
 }
 .header__container {
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    min-width: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -44,11 +46,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    margin-left: 88px;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 

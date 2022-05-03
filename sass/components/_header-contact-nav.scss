@@ -8,6 +8,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-left: 305px;
   }
 }
 
@@ -46,6 +47,11 @@
   color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +72,7 @@
 }
 
 .contact-nav__link--tel {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 34px;
     line-height: 1.176;
   }
